@@ -86,7 +86,7 @@ This deals with resolving the issues that happen when Git can't automatically me
 
 1. Use your preferred IDE to the file that the system tells you have conflicts--this will usually be Game.js, but not always.
 
-2. Once you have the file open, look for a line that starts with "<<<<<<< HEAD"--this will usually be pretty easy to spot, since an IDE will recognize this as not being proper code. The HEAD line is Git's way of marking where the upstream branch's code starts. Below this section of code will be a line of "=" signs (i.e. ======================================), which divides the upstream code from whatever changes you made in this area. The section will end with ">>>>>>> BRANCH-NAME" to mark the end of your branch's changes.
+2. Once you have the file open, look for a line that starts with "<<<<<<< HEAD"--this will usually be pretty easy to spot, since an IDE will recognize this as not being proper code. The HEAD line is Git's way of marking where your branch's code starts. Below this section of code will be a line of "=" signs (i.e. ======================================), which divides the upstream code from whatever changes you made in this area. The section will end with ">>>>>>> BRANCH-NAME" to mark the end of the upstream branch's changes.
 
 3. Read your code and the upstream code and decide whether to go with one version or the other, or to put something else entirely in this area. Whatever your solution, be sure to delete the lines that Git put in so that the computer can read your code again.
 
